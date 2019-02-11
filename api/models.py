@@ -14,7 +14,7 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
                                     validators.RegexValidator(r'^[\w.@+-]+$', _('Düzgün istifadəçi adı daxil edin.'),
                                                               'yanlışdır')
                                 ])
-    full_name = models.CharField(_('first name'), max_length=255, blank=True)
+    full_name = models.CharField(_('Full name'), max_length=255, blank=True)
     # last_name = models.CharField(_('last name'), max_length=255, blank=True)
     email = models.EmailField(_('email address'), max_length=255)
     # profile_picture = models.ImageField(upload_to=get_user_profile_photo_file_name, null=True, blank=True)
@@ -43,6 +43,13 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural = 'İstifadəçilər'
 
 
+    def friends(self):
+        return [
+            obj.from_user for obj in
+            self.my_friends.all()
+        ]
+
+
 
 
 class Friends(models.Model):
@@ -52,8 +59,18 @@ class Friends(models.Model):
 
 class Wishes(models.Model):
     author = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='author_of_wish')
-    target = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='target_of_wish')
     title = models.CharField(max_length=100)
     content = models.CharField(max_length=1000)
     url_image = models.URLField()
     url_video = models.URLField()
+
+    def user_id(self):
+        return self.wishtarget_set.all()
+
+
+class WishTarget(models.Model):
+    target = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="wish_target")
+    wish = models.ForeignKey(Wishes, on_delete=models.CASCADE)
+    status = models.BooleanField(default=True)
+    next = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="next_target")
+
