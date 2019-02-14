@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class MyUser(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(_('username'), max_length=100, unique=True,
-                                help_text=_('Tələb olunur. 75 simvol və ya az. Hərflər, Rəqəmlər və '
+                                help_text=_('Tələb olunur. 100 simvol və ya az. Hərflər, Rəqəmlər və '
                                             '@/./+/-/_ simvollar.'),
                                 validators=[
                                     validators.RegexValidator(r'^[\w.@+-]+$', _('Düzgün istifadəçi adı daxil edin.'),
@@ -29,8 +29,7 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
                                     help_text=_('Designates whether this user should be treated as '
                                                 'active. Unselect this instead of deleting accounts.'))
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)#
-# class Friends(models.Model):
-#     username = models.ForeignKey(MyUser, on_delete=models.CASCADE)
+
 
 
     objects = UserManager()
@@ -39,8 +38,8 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ['email']
 
     class Meta:
-        verbose_name = 'İstifadəçi'
-        verbose_name_plural = 'İstifadəçilər'
+        verbose_name = 'Profile'
+        verbose_name_plural = 'Profiles'
 
 
     def friends(self):
@@ -49,6 +48,11 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
             self.my_friends.all()
         ]
 
+    def my_wishes(self):
+        return self.author_of_wish.all()
+
+    def incoming_wishes(self):
+        return self.wish_target.all()
 
 
 
@@ -59,10 +63,11 @@ class Friends(models.Model):
 
 class Wishes(models.Model):
     author = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='author_of_wish')
-    title = models.CharField(max_length=100)
-    content = models.CharField(max_length=1000)
-    url_image = models.URLField()
-    url_video = models.URLField()
+    content = models.CharField(max_length=1000, null=False)
+    url_image = models.URLField(null=True)
+    url_video = models.URLField(null=True)
+
+
 
     def user_id(self):
         return self.wishtarget_set.all()

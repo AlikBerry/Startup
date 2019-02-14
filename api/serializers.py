@@ -8,21 +8,31 @@ from django.contrib.auth import authenticate
 class UserCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = MyUser
-        fields = ('full_name', 'email', 'password')
+        fields = ('id', 'full_name', 'email', 'password')
+
+
+
+class WishInfo(serializers.ModelSerializer):
+    class Meta:
+        model = Wishes
+        fields = ('id',  "content",
+                  "url_image", "url_video",)
 
 
 class UserFriends(serializers.ModelSerializer):
     class Meta:
         model = MyUser
-        fields = ("id",'full_name', "email")
+        fields = ("id", 'full_name', "email")
 
 
 class UserInfoSerializer(serializers.ModelSerializer):
     friends = UserFriends(many=True)
+    my_wishes = WishInfo(many=True)
+    incoming_wishes = WishInfo(many=True)
 
     class Meta:
         model = MyUser
-        fields = ('full_name', 'email', 'friends')
+        fields = ('id', 'full_name', 'email', 'friends', 'my_wishes', 'incoming_wishes')
 
 
 class WishTargetSerializer(serializers.ModelSerializer):
@@ -38,5 +48,6 @@ class WishInfoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Wishes
-        fields = ("author", "title", "content",
+        fields = ("author", "content",
                   "url_image", "url_video", "user_id")
+

@@ -27,7 +27,7 @@ SECRET_KEY = 'g7&!jyq(4qimu58oqewgeh4#%bu^b9p0)ktj^9mn@qf5rdz_^4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = "api.MyUser"
 

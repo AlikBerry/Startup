@@ -68,3 +68,20 @@ class WishListApiView(APIView):
         return JsonResponse({
             "data": serializers.data
         })
+
+# class WishCreate(APIView):
+#
+#     def post(self, request, *args, **kwargs):
+#         serializer = WishInfoSerializer(data=request.data)
+#         if serializer.is_valid():
+#             wish = Wishes(
+#                 content=serializer.data["content"],
+#             )
+#             wish.save()
+#             return JsonResponse({'Status': 'Ok', 'Message': 'Congratulation created', 'data': serializer.data},
+#                                 status=status.HTTP_201_CREATED)
+#
+#         return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#
+
+

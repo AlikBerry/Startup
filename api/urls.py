@@ -8,11 +8,13 @@ from . import views
 app_name = "api"
 
 urlpatterns = [
-    path('token/', obtain_jwt_token),
+    path('signin/', obtain_jwt_token),
     path('token-refresh/', refresh_jwt_token),
     path('token-verify/', verify_jwt_token),
-    path('register/', Register.as_view()),
-    path('test/', TestApiView.as_view()),
+    path('signup/', Register.as_view()),
+    path('getUserInfo/', TestApiView.as_view()),
     path('follow/', FollowApiView.as_view()),
     path('wishes/', WishListApiView.as_view()),
+    # path('wish_create/', WishCreate.as_view()),
+
 ]
