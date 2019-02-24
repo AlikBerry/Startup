@@ -25,14 +25,6 @@ class UserFriends(serializers.ModelSerializer):
         fields = ("id", 'full_name', "email")
 
 
-class UserInfoSerializer(serializers.ModelSerializer):
-    friends = UserFriends(many=True)
-    my_wishes = WishInfo(many=True)
-    incoming_wishes = WishInfo(many=True)
-
-    class Meta:
-        model = MyUser
-        fields = ('id', 'full_name', 'email', 'friends', 'my_wishes', 'incoming_wishes')
 
 
 class WishTargetSerializer(serializers.ModelSerializer):
@@ -43,11 +35,26 @@ class WishTargetSerializer(serializers.ModelSerializer):
 
 
 class WishInfoSerializer(serializers.ModelSerializer):
-    user_id = WishTargetSerializer(many=True)
+    targets = WishTargetSerializer(many=True)
     author = UserFriends()
 
     class Meta:
         model = Wishes
         fields = ("author", "content",
-                  "url_image", "url_video", "user_id")
+                  "url_image", "url_video", "targets")
 
+
+class WishCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Wishes
+        fields = ("content",)
+
+
+class UserInfoSerializer(serializers.ModelSerializer):
+    friends = UserFriends(many=True)
+    my_wishes = WishInfoSerializer(many=True)
+    incoming_wishes = WishInfoSerializer(many=True)
+
+    class Meta:
+        model = MyUser
+        fields = ('id', 'full_name', 'email', 'friends', 'my_wishes', 'incoming_wishes')

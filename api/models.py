@@ -68,8 +68,7 @@ class Wishes(models.Model):
     url_video = models.URLField(null=True)
 
 
-
-    def user_id(self):
+    def targets(self):
         return self.wishtarget_set.all()
 
 

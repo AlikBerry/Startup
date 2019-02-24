@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dac59cac-5f9f-438e-bb36-6f90f759629e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/Startup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Startup.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/django-admin" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/django-admin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/django-admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/easy_install-3.6" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/easy_install-3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/markdown_py" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/markdown_py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/pip3.6" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/pip3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.py3/bin/pyjwt" beforeDir="false" afterPath="$PROJECT_DIR$/../.py3/bin/pyjwt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0002_friends_wishes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0003_auto_20190211_0750.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0004_auto_20190214_0702.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0005_auto_20190214_0822.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0006_auto_20190214_0850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/migrations/0007_auto_20190214_1104.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bottlex/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../bottlex/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +41,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="75" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="75" />
+            <state relative-caret-position="153">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -46,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+            <state relative-caret-position="1071">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -71,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../bottlex/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
+            <state relative-caret-position="442">
               <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
@@ -82,11 +104,23 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="149">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bottlex/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,10 +156,10 @@
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
         <option value="$PROJECT_DIR$/../bottlex/settings.py" />
-        <option value="$PROJECT_DIR$/../api/models.py" />
-        <option value="$PROJECT_DIR$/../api/serializers.py" />
-        <option value="$PROJECT_DIR$/../api/views.py" />
         <option value="$PROJECT_DIR$/../api/urls.py" />
+        <option value="$PROJECT_DIR$/../api/views.py" />
+        <option value="$PROJECT_DIR$/../api/serializers.py" />
+        <option value="$PROJECT_DIR$/../api/models.py" />
       </list>
     </option>
   </component>
@@ -140,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,12 +189,19 @@
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="bottlex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,6 +223,28 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Startup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Startup" type="Python.DjangoServer" factoryName="Django server">
       <module name="Startup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,17 +285,20 @@
       <workItem from="1549964125353" duration="25000" />
       <workItem from="1549964894253" duration="2709000" />
       <workItem from="1550124683404" duration="9210000" />
+      <workItem from="1550445054216" duration="183000" />
+      <workItem from="1550472681852" duration="22000" />
+      <workItem from="1550491988452" duration="5158000" />
+      <workItem from="1550931310880" duration="1359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24091000" />
+    <option name="totallyTimeSpent" value="30813000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1360" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16438356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1737481" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -247,13 +312,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2882736" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.375" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.21498372" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" x="0" y="0" width="291" height="543" id="Documentation" order="5" side_tool="true" weight="0.32928678" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -291,26 +357,40 @@
     <entry file="file://$PROJECT_DIR$/../urls.py" />
     <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.6/site-packages/rest_framework/request.py" />
     <entry file="file://$PROJECT_DIR$/../views.py" />
-    <entry file="file://$PROJECT_DIR$/../bottlex/urls.py" />
     <entry file="file://$PROJECT_DIR$/../api/admin.py" />
-    <entry file="file://$PROJECT_DIR$/../.py3/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
+    <entry file="file://$PROJECT_DIR$/../.py3/lib/python3.6/site-packages/django/contrib/auth/base_user.py" />
+    <entry file="file://$PROJECT_DIR$/../.py3/lib/python3.6/site-packages/rest_framework/views.py" />
+    <entry file="file://$PROJECT_DIR$/../api/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="-578">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.py3/lib/python3.6/site-packages/rest_framework/views.py">
+    <entry file="file://$PROJECT_DIR$/../api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+        <state relative-caret-position="1071">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -328,7 +408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../bottlex/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="442">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
@@ -336,27 +416,20 @@
     <entry file="file://$PROJECT_DIR$/../api/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api/serializers.py">
+    <entry file="file://$PROJECT_DIR$/../bottlex/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#631#663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../api/urls.py">
+    <entry file="file://$PROJECT_DIR$/../api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="75" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="75" />
+        <state relative-caret-position="149">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
