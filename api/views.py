@@ -7,8 +7,8 @@ from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, AllowAny
 
-from api.models import MyUser, Friends, Wishes
-from api.serializers import UserCreateSerializer, UserInfoSerializer, WishInfoSerializer, WishCreateSerializer
+from api.models import MyUser, Friends, Bottle
+from api.serializers import UserCreateSerializer, UserInfoSerializer, BottleInfoSerializer, BottleCreateSerializer
 
 
 class Register(APIView):
@@ -61,20 +61,20 @@ class FollowApiView(APIView):
 
 
 
-class WishListApiView(APIView):
+class BottleListApiView(APIView):
 
     def get(self, *args, **kwargs):
-        serializers = WishInfoSerializer(Wishes.objects.all(), many=True)
+        serializers = BottleInfoSerializer(Bottle.objects.all(), many=True)
         return JsonResponse({
             "data": serializers.data
         })
 
-class WishCreate(APIView):
+class BottleCreate(APIView):
 
     def post(self, request, *args, **kwargs):
-        serializer = WishCreateSerializer(data=request.data)
+        serializer = BottleCreateSerializer(data=request.data)
         if serializer.is_valid():
-            wish = Wishes(
+            wish = Bottle(
                 author=request.user,
                 content=serializer.data["content"],
             )

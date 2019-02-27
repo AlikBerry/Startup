@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import ugettext_lazy as _
 
 from api.forms import MyUserForm
-from api.models import MyUser, Wishes, Friends, WishTarget
+from api.models import MyUser, Bottle, Friends, BottleTarget
 
 
 @admin.register(MyUser)
@@ -24,5 +24,5 @@ class FriendsAdmin(admin.ModelAdmin):
     list_display = ("from_user", "to_user")
 
 
-admin.site.register(Wishes)
-admin.site.register(WishTarget)
+admin.site.register(Bottle)
+admin.site.register(BottleTarget)

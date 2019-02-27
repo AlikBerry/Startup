@@ -8,8 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class MyUser(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(_('username'), max_length=100, unique=True,
-                                help_text=_('Tələb olunur. 100 simvol və ya az. Hərflər, Rəqəmlər və '
-                                            '@/./+/-/_ simvollar.'),
+                                help_text=_('Tələb olunur. 100 simvol və ya az'),
                                 validators=[
                                     validators.RegexValidator(r'^[\w.@+-]+$', _('Düzgün istifadəçi adı daxil edin.'),
                                                               'yanlışdır')
@@ -48,11 +47,11 @@ class MyUser(AbstractBaseUser, PermissionsMixin):
             self.my_friends.all()
         ]
 
-    def my_wishes(self):
-        return self.author_of_wish.all()
+    def my_bottles(self):
+        return self.author_of_bottle.all()
 
-    def incoming_wishes(self):
-        return self.wish_target.all()
+    def incoming_bottles(self):
+        return self.bottle_target.all()
 
 
 
@@ -61,20 +60,20 @@ class Friends(models.Model):
     to_user = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='my_friends')
 
 
-class Wishes(models.Model):
-    author = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='author_of_wish')
+class Bottle(models.Model):
+    author = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name='author_of_bottle')
     content = models.CharField(max_length=1000, null=False)
     url_image = models.URLField(null=True)
     url_video = models.URLField(null=True)
 
 
     def targets(self):
-        return self.wishtarget_set.all()
+        return self.bottletarget_set.all()
 
 
-class WishTarget(models.Model):
-    target = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="wish_target")
-    wish = models.ForeignKey(Wishes, on_delete=models.CASCADE)
+class BottleTarget(models.Model):
+    target = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="bottle_target")
+    bottle = models.ForeignKey(Bottle, on_delete=models.CASCADE)
     status = models.BooleanField(default=True)
     next = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="next_target")
 
